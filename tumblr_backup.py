@@ -182,17 +182,17 @@ def get_api_url(account):
 
 def set_period():
     """Prepare the period start and end timestamps"""
-    i = 0
-    tm = [int(options.period[:4]), 1, 1, 0, 0, 0, 0, 0, -1]
-    if len(options.period) >= 6:
-        i = 1
-        tm[1] = int(options.period[4:6])
-    if len(options.period) == 8:
-        i = 2
-        tm[2] = int(options.period[6:8])
-    options.p_start = time.mktime(tm)
-    tm[i] += 1
-    options.p_stop = time.mktime(tm)
+#   i = 0
+#    tm = [int(options.period[:4]), 1, 1, 0, 0, 0, 0, 0, -1]
+#    if len(options.period) >= 6:
+#        i = 1
+#        tm[1] = int(options.period[4:6])
+#    if len(options.period) == 8:
+#        i = 2
+#        tm[2] = int(options.period[6:8])
+    options.p_start = time.mktime((2018, 12, 17, 0, 0, 0, 0, 0, 0))
+#    tm[i] += 1
+    options.p_stop = time.mktime((2019, 12, 17, 0, 0, 0, 0, 0, 0))
 
 
 def apiparse(base, count, start=0):
