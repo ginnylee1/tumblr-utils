@@ -190,9 +190,9 @@ def set_period():
 #    if len(options.period) == 8:
 #        i = 2
 #        tm[2] = int(options.period[6:8])
-    options.p_start = time.mktime((2018, 12, 17, 0, 0, 0, 0, 0, 0))
+    options.p_start = time.mktime((2019, 12, 17, 0, 0, 0, 0, 0, 0))
 #    tm[i] += 1
-    options.p_stop = time.mktime((2019, 12, 17, 0, 0, 0, 0, 0, 0))
+    options.p_stop = time.mktime((2020, 12, 17, 0, 0, 0, 0, 0, 0))
 
 
 def apiparse(base, count, start=0):
